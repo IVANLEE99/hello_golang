@@ -7,19 +7,6 @@ import (
 
 func main()  {
 	const (
-		a=1
-		b=iota
-		c
-		d=iota
-	)
-	const (
-		e=iota//重置
-		f
-	)
-	const g=iota
-	fmt.Println(a,b,c,d,e,f,g)
-
-	const (
 		KB float64 = (1<<(iota*10))
 		MB
 		GB
@@ -31,5 +18,18 @@ func main()  {
 	fmt.Println(GB)
 	fmt.Println(TB)
 	fmt.Println(PB)
+
+	a:=1
+	a++
+	var p *int = &a//指针
+	fmt.Println(p)
+	fmt.Println(*p)//取值
+
+	b:=10
+	if b:=1;b>0{
+		fmt.Println(b)
+	}
+	fmt.Println(b)
+
 
 }
